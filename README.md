@@ -2,7 +2,7 @@
 
 A real-time collaborative task board — think Trello — where multiple users see card movements live without refreshing. Built with ASP.NET Core Web API, SignalR, Angular, and JWT authentication.
 
-**Live demo:** [your-live-url-here](https://your-live-url-here)
+**Live demo:** https://taskboard-anishkoirala.netlify.app
 
 ---
 
