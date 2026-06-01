@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="TaskBoard.UnitTests/TaskBoard.UnitTests.csproj" />
+  </Folder>
+  <Project Path="TaskBoard.API/TaskBoard.API.csproj" />
+  <Project Path="TaskBoard.Application/TaskBoard.Application.csproj" />
+  <Project Path="TaskBoard.Domain/TaskBoard.Domain.csproj" />
+  <Project Path="TaskBoard.Infrastructure/TaskBoard.Infrastructure.csproj" />
+</Solution>

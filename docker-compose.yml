@@ -1,0 +1,6 @@
+services:
+  taskboard.api:
+    image: ${DOCKER_REGISTRY-}taskboardapi
+    build:
+      context: .
+      dockerfile: TaskBoard.API\Dockerfile

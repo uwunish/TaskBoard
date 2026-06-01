@@ -1,0 +1,20 @@
+# .NET
+**/bin/
+**/obj/
+**/publish/
+*.user
+.vs/
+
+# EF migrations temp files
+*.db
+
+# Secrets — never push these
+**/appsettings.Development.json
+
+# Angular
+**/node_modules/
+**/dist/
+
+# OS
+.DS_Store
+Thumbs.db
