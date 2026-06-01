@@ -21,13 +21,11 @@ COPY ["TaskBoard.Infrastructure/TaskBoard.Infrastructure.csproj", "TaskBoard.Inf
 RUN dotnet restore "./TaskBoard.API/TaskBoard.API.csproj"
 COPY . .
 WORKDIR "/src/TaskBoard.API"
-RUN dotnet build "./TaskBoard.API.csproj" -c %BUILD_CONFIGURATION% -o /app/build
-
+RUN dotnet build "./TaskBoard.API.csproj"
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./TaskBoard.API.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false
-
+RUN dotnet publish "./TaskBoard.API.csproj" -c Release -o /app/publish
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
