@@ -28,7 +28,7 @@ README.md
 !.git/config
 !.git/packed-refs
 !.git/refs/heads/**
-**/*.user
+*.user
 TaskBoard.Client
 tests
 publish
