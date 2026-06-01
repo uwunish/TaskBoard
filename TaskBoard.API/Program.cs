@@ -53,7 +53,6 @@ builder.Services.AddCors(options =>
     options.AddPolicy("Angular", policy =>
     policy.WithOrigins(
         "http://localhost:4200",
-        "http://taskboard-anishkoirala.runasp.net",
         "https://taskboard-anishkoirala.netlify.app"
         )
     .AllowAnyHeader()
