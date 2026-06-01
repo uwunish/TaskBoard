@@ -11,7 +11,7 @@ COPY TaskBoard.Application/TaskBoard.Application.csproj TaskBoard.Application/
 COPY TaskBoard.Infrastructure/TaskBoard.Infrastructure.csproj TaskBoard.Infrastructure/
 COPY TaskBoard.Domain/TaskBoard.Domain.csproj TaskBoard.Domain/
 
-RUN dotnet restore "src/TaskBoard.API/TaskBoard.API.csproj"
+RUN dotnet restore "TaskBoard.API/TaskBoard.API.csproj"
 
 # Copy everything else
 COPY TaskBoard.API/ TaskBoard.API/
