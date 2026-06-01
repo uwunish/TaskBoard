@@ -8,7 +8,7 @@ A RESTful task management API built with ASP.NET Core and Clean Architecture. Su
 
 | Layer | Technology |
 |---|---|
-| API | ASP.NET Core Web API, C# |
+| API | ASP.NET Core Web API, C#, SignalR |
 | Architecture | Clean Architecture |
 | Containerisation | Docker, Docker Compose |
 | Testing | xUnit (Unit Tests) |
